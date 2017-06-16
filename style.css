@@ -13,7 +13,7 @@ html, body {
 
 body {
   line-height: 1.5;
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'audiowide', sans-serif;
   font-size: 1.6rem; }
 
 body::-webkit-scrollbar {
@@ -75,15 +75,6 @@ header {
   display: -webkit-flex;
   display: flex; }
 
-.name {
-  color: white;
-  font-family: "membraregular";
-  text-shadow: 0 0 10px #0000FF, 0 0 20px #0000FF, 0 0 30px #0000FF, 0 0 40px #0000FF; }
-  .name:hover {
-    color: #FF0000;
-    text-shadow: 0 0 4px #333333, 0 0 10px #FF0000, 0 0 20px #FF0000;
-    cursor: crosshair; }
-
 h1 {
   margin: 80px 0 0; }
 
@@ -93,6 +84,60 @@ h3 {
 .name {
   text-align: center; }
 
+.name {
+  color: white;
+  font-family: "membraregular";
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate; }
+  .name:hover {
+    color: #FF0000;
+    cursor: default;
+    -webkit-animation: neon_alt 1.5s ease-in-out infinite alternate;
+    animation: neon_alt 1.5s ease-in-out infinite alternate; }
+    .name:hover .broken {
+      -webkit-animation: neon_broken 1.5s ease-in-out infinite alternate;
+      animation: neon_broken 1.5s ease-in-out infinite alternate; }
+  .name .broke {
+    color: black; }
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 70px #0000FF, 0 0 80px #0000FF, 0 0 100px #0000FF, 0 0 150px #0000FF; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0000FF, 0 0 20px #0000FF, 0 0 35px #0000FF, 0 0 40px #0000FF, 0 0 50px #0000FF, 0 0 75px #0000FF; } }
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 70px #0000FF, 0 0 80px #0000FF, 0 0 100px #0000FF, 0 0 150px #0000FF; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0000FF, 0 0 20px #0000FF, 0 0 35px #0000FF, 0 0 40px #0000FF, 0 0 50px #0000FF, 0 0 75px #0000FF; } }
+@-webkit-keyframes neon_alt {
+  from {
+    text-shadow: 0 0 2px #000, 0 0 8px #FF0000, 0 0 50px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000; }
+  to {
+    text-shadow: 0 0 2px #000, 0 0 4px #FF0000, 0 0 25px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000; } }
+@keyframes neon_alt {
+  from {
+    text-shadow: 0 0 2px #000, 0 0 8px #FF0000, 0 0 50px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000; }
+  to {
+    text-shadow: 0 0 2px #000, 0 0 4px #FF0000, 0 0 25px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000; } }
+@-webkit-keyframes neon_broken {
+  0% {
+    text-shadow: 0 0 2px #000, 0 0 8px #FF0000, 0 0 50px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000; }
+  97% {
+    color: #FF0000;
+    text-shadow: 0 0 2px #000, 0 0 4px #FF0000, 0 0 25px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000; }
+  98% {
+    color: #000;
+    text-shadow: 0 0 10px #000, 0 0 20px #000; } }
+@keyframes neon_broken {
+  0% {
+    text-shadow: 0 0 2px #000, 0 0 8px #FF0000, 0 0 50px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000; }
+  97% {
+    color: #FF0000;
+    text-shadow: 0 0 2px #000, 0 0 4px #FF0000, 0 0 25px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000; }
+  98% {
+    color: #000;
+    text-shadow: 0 0 10px #000, 0 0 20px #000; } }
 h2 {
   font-weight: 600;
   text-align: center; }
