@@ -1,0 +1,476 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+//------------------------------colors
+$red: #FF0000;
+$blue: #0000FF;
+$black: #333333;
+
+//------------------------------GLOBAL
+body {
+  line-height: 1.5;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+//------------------------------nav
+.navbar-header {
+  color: $blue;
+  font-family: "membraregular";
+}
+
+li a {
+  font-size: 14px;
+  padding-top: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-header {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.navbar-collapse {
+  background-color: rgba(0,0,0,0.65);
+}
+
+.navbar-toggle {
+ border-color: white;
+ box-shadow: 0 0 20px $blue, 0 0 30px $blue;
+
+ .icon-bar {
+   background-color: white;
+ }
+
+ &:hover {
+   border-color: $red;
+   box-shadow: 0 0 10px $red, 0 0 20px $red;
+
+   .icon-bar {
+     background-color: $red;
+   }
+ }
+}
+
+#overnavbar a {
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 30px $blue, 0 0 40px $blue;
+  &:hover {
+    color: $red;
+    text-shadow: 0 0 4px $black, 0 0 10px $red, 0 0 20px $red;
+    background-color: inherit ;
+  }
+  &:focus {
+    color: $red;
+    text-shadow: 0 0 4px $black, 0 0 10px $red, 0 0 20px $red;
+    background-color: inherit ;
+  }
+}
+
+.navbar-brand {
+ font-size: 22px;
+ display: none;
+}
+
+//------------------------------header
+header {
+  background: url("images/background.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.name {
+  color: white;
+  font-family: "membraregular";
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 30px $blue, 0 0 40px $blue;
+  &:hover {
+    color: $red;
+    text-shadow: 0 0 4px $black, 0 0 10px $red, 0 0 20px $red;
+    cursor: crosshair;
+  }
+}
+
+h1 {
+  margin: 80px 0 0;
+}
+
+h3 {
+  margin: 50px 0;
+}
+
+.name {
+  text-align: center;
+}
+//------------------------------about me
+h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.about {
+  font-size: 14px;
+  background-image: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.1)), url("images/moon.jpg");
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  .container {
+    text-shadow: 0 0 2px $black, 0 0 5px $black, 0 0 10px $black, 0 0 20px $black;
+    box-shadow: 0 0 4px 4px rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+//------------------------------skills
+h4 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.skills {
+  list-style-type: none;
+  margin-top: 100px;
+}
+
+.skill {
+  margin-bottom: 120px;
+
+  p {
+    text-align: center;
+    height: 40px;
+    max-width: 540px;
+    margin: auto;
+  }
+}
+
+.big_icon {
+  object-fit: cover;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.col-md-4 {
+  vertical-align: bottom;
+}
+
+.small_icon {
+  margin: 60px 40px 0;
+}
+
+.jquery {
+  margin: 60px 0 0;
+  padding: 0;
+}
+
+.progress {
+  max-width: 300px;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+}
+
+.icons {
+  img {
+    object-fit: cover;
+    height: 60px;
+    display: block;
+    margin: auto;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 15px;
+    max-width: 540px;
+    margin: auto;
+  }
+
+  .col-sm-4, .col-sm-2 {
+    margin-bottom: 70px;
+  }
+}
+
+article {
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+
+//------------------------------work
+h2 {
+  margin-bottom: 20px;
+}
+
+.work {
+  background-image: url("images/3.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  color: white;
+  text-align: center;
+
+  .container {
+    text-shadow: 0 0 2px $black, 0 0 10px $black, 0 0 20px $black, 0 0 30px $black;
+  }
+
+  img {
+    margin-top: 40px;
+    &:hover {
+      -webkit-filter: drop-shadow(0 0 20px white);
+      filter: drop-shadow(0 0 20px white);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.used {
+  display: inline-block;
+  margin: auto;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  &:hover {
+    -webkit-filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px white);
+  }
+
+  div {
+    height: 24px;
+    width: 24px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 2px 5px;
+  }
+
+  .html {
+    background-image: url("images/html.png");
+  }
+  .css {
+    background-image: url("images/css.png");
+  }
+  .js {
+    background-image: url("images/js.png");
+  }
+  .jq {
+    background-image: url("images/jquery.png");
+  }
+  .rwd {
+    background-image: url("images/rwd_invert.png");
+    width: 40px;
+  }
+  .ps {
+    background-image: url("images/photoshop.png");
+  }
+  .sass {
+    background-image: url("images/sass.png");
+    width: 31px;
+  }
+  .bs {
+    background-image: url("images/bootstrapicon.png");
+  }
+}
+
+//------------------------------contact
+
+.contact {
+  color: white;
+  background-color: #282828;
+  padding-top: 145px;
+  padding-bottom: 80px;
+  position: relative;
+  text-align: center;
+
+  .row {
+    margin-top: 80px;
+  }
+
+  .glyphicon {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  .glyphicon-map-marker {
+    padding-right: 0;
+  }
+}
+
+.dane {
+  font-size: 12px;
+  margin-bottom: 30px;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+  &:hover {
+    -webkit-filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px white);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.github {
+  height: 28px;
+  width: 28px;
+  padding-left: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/github.png");
+}
+
+.et {
+  position: absolute;
+  right: calc(50% - 160px);
+  top: 115px;
+  height: 52px;
+  width: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("images/et.png");
+  opacity: 0;
+  &:hover {
+    opacity: 0.05;
+  }
+}
+
+//-----------------------responsive-------------------------
+//-----------------------BIGGER Phones----------------------
+@media only screen and (min-width: 480px) {
+  h1 {
+    margin: 50px 0 0;
+  }
+
+  .about {
+    padding-top: 120px;
+    padding-bottom: 180px;
+  }
+
+  .small_icon, .jquery {
+    margin: 60px 80px 0;
+  }
+}
+
+//-----------------------TABLETS----------------------------
+@media only screen and (min-width: 600px) {
+  .about {
+    font-size: 14px;
+    padding-top: 200px;
+    padding-bottom: 240px;
+  }
+
+  .small_icon, .jquery {
+    margin: 60px 140px 0;
+  }
+}
+
+//-----------------------DESKTOP----------------------------
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    display: initial;
+  }
+
+  .navbar-header {
+    background-color: initial;
+  }
+
+  .navbar-collapse {
+    background-color: initial;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+
+  .dane {
+    font-size: 20px;
+  }
+
+  .contact {
+    padding-top: 80px;
+
+    .glyphicon {
+      font-size: 22px;
+      padding-right: 20px;
+    }
+  }
+
+  .github {
+    padding-left: 45px;
+  }
+}
+
+//-----------------------HI RES----------------------------
+@media only screen and (min-width: 992px) {
+
+  .small_icon, .jquery {
+    margin: 80px 0 0;
+  }
+
+  .et {
+    right: calc(50% - 260px);
+    height: 115px;
+    width: 180px;
+  }
+}
+
+//-----------------------HIGHEST RESOLUTION-----------------
+@media only screen and (min-width: 1200px) {
+
+  li a {
+    font-size: 16px;
+  }
+
+  .small_icon, .jquery {
+    margin: 60px 0 0;
+  }
+
+  .contact {
+    text-align: left;
+
+    .glyphicon {
+      transform: translateY(3px);
+      float: left;
+    }
+  }
+}
