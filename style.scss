@@ -32,11 +32,6 @@ body::-webkit-scrollbar {
 }
 
 //------------------------------nav
-.navbar-header {
-  color: $blue;
-  font-family: "membraregular";
-}
-
 li a {
   font-size: 14px;
   padding-top: 0;
@@ -47,10 +42,14 @@ li a {
 }
 
 .navbar-header {
+  color: $blue;
+  font-family: "membraregular";
+  background-color: $black;
   background-color: rgba(0,0,0,0.8);
 }
 
 .navbar-collapse {
+  background-color: $black;
   background-color: rgba(0,0,0,0.65);
 }
 
@@ -87,7 +86,7 @@ li a {
 }
 
 .navbar-brand {
- font-size: 22px;
+ font-size: 17px;
  display: none;
 }
 
@@ -115,59 +114,9 @@ h3 {
 
 .name {
   text-align: center;
-}
-
-//--------------------------------animacja logo
-.name {
   color: white;
   font-family: "membraregular";
-
-  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-  animation: neon 1.5s ease-in-out infinite alternate;
-
-  &:hover {
-    color: $red;
-    cursor: default;
-
-    -webkit-animation: neon_alt 1.5s ease-in-out infinite alternate;
-    animation: neon_alt 1.5s ease-in-out infinite alternate;
-
-    .broken {
-      -webkit-animation: neon_broken 1.5s ease-in-out infinite alternate;
-      animation: neon_broken 1.5s ease-in-out infinite alternate;
-    }
-
-  }
-  .broke {
-    color: black;
-  }
-}
-
-@-webkit-keyframes neon {
-  from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
-  to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
-  }
-@keyframes neon {
-  from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
-  to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
-}
-@-webkit-keyframes neon_alt {
-  from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-  to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-  }
-@keyframes neon_alt {
-  from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-  to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-  }
-@-webkit-keyframes neon_broken {
-  0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-  97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-  98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
-}
-@keyframes neon_broken {
-  0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-  97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-  98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
+  text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 30px $blue, 0 0 40px $blue;
 }
 
 //------------------------------about me
@@ -404,16 +353,13 @@ h2 {
 .et {
   position: absolute;
   right: calc(50% - 160px);
-  top: 115px;
+  top: 180px;
   height: 52px;
   width: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("images/et.png");
   opacity: 0;
-  &:hover {
-    opacity: 0.05;
-  }
 }
 
 //-----------------------responsive-------------------------
@@ -421,6 +367,10 @@ h2 {
 @media only screen and (min-width: 480px) {
   h1 {
     margin: 50px 0 0;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
   }
 
   .about {
@@ -448,10 +398,6 @@ h2 {
 
 //-----------------------DESKTOP----------------------------
 @media only screen and (min-width: 768px) {
-  .navbar-brand {
-    display: initial;
-  }
-
   .navbar-header {
     background-color: initial;
   }
@@ -480,10 +426,63 @@ h2 {
   .github {
     padding-left: 45px;
   }
+
+  .et {
+    top: 115px;
+  }
 }
 
 //-----------------------HI RES----------------------------
 @media only screen and (min-width: 992px) {
+  //--------------------------------animacja logo
+  .name {
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+
+    &:hover {
+      cursor: default;
+    }
+
+    .broken {
+      -webkit-animation: neon_broken 1.5s ease-in-out infinite alternate;
+      animation: neon_broken 1.5s ease-in-out infinite alternate;
+    }
+
+    .broke {
+      color: black;
+    }
+  }
+
+  @-webkit-keyframes neon {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
+    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
+    }
+  @keyframes neon {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
+    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
+  }
+  @-webkit-keyframes neon_alt {
+    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    }
+  @keyframes neon_alt {
+    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    }
+  @-webkit-keyframes neon_broken {
+    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
+  }
+  @keyframes neon_broken {
+    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
+  }
+//----------------------------------------------------------
+  .navbar-brand {
+    font-size: 26px;
+  }
 
   .small_icon, .jquery {
     margin: 80px 0 0;
@@ -515,4 +514,15 @@ h2 {
       float: left;
     }
   }
+}
+
+//-----------------------classes used by javascript
+.nav_background {
+  background-color: $black;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.red {
+  -webkit-animation: neon_alt 1.5s ease-in-out infinite alternate;
+  animation: neon_alt 1.5s ease-in-out infinite alternate;
 }
