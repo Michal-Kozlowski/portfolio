@@ -141,6 +141,7 @@ h2 {
   .container {
     text-shadow: 0 0 2px $black, 0 0 5px $black, 0 0 10px $black, 0 0 20px $black;
     box-shadow: 0 0 4px 4px rgba(255,255,255,0.3);
+    background-color: #000;
     background-color: rgba(0,0,0,0.6);
   }
 }
@@ -434,11 +435,9 @@ h2 {
 
 //-----------------------HI RES----------------------------
 @media only screen and (min-width: 992px) {
-  //--------------------------------animacja logo
   .name {
     -webkit-animation: neon 1.5s ease-in-out infinite alternate;
     animation: neon 1.5s ease-in-out infinite alternate;
-
     &:hover {
       cursor: default;
     }
@@ -453,33 +452,6 @@ h2 {
     }
   }
 
-  @-webkit-keyframes neon {
-    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
-    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
-    }
-  @keyframes neon {
-    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
-    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
-  }
-  @-webkit-keyframes neon_alt {
-    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-    }
-  @keyframes neon_alt {
-    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-    }
-  @-webkit-keyframes neon_broken {
-    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
-  }
-  @keyframes neon_broken {
-    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
-    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
-    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
-  }
-//----------------------------------------------------------
   .navbar-brand {
     font-size: 26px;
   }
@@ -526,3 +498,32 @@ h2 {
   -webkit-animation: neon_alt 1.5s ease-in-out infinite alternate;
   animation: neon_alt 1.5s ease-in-out infinite alternate;
 }
+
+
+//-----------------------animations
+  @-webkit-keyframes neon {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
+    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
+    }
+  @keyframes neon {
+    from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $blue, 0 0 40px $blue, 0 0 70px $blue, 0 0 80px $blue, 0 0 100px $blue, 0 0 150px $blue;}
+    to {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $blue, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue, 0 0 50px $blue, 0 0 75px $blue;}
+  }
+  @-webkit-keyframes neon_alt {
+    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    }
+  @keyframes neon_alt {
+    from {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    to {text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    }
+  @-webkit-keyframes neon_broken {
+    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
+  }
+  @keyframes neon_broken {
+    0%  {text-shadow: 0 0 2px #000, 0 0 8px $red, 0 0 50px $red, 0 0 80px $red, 0 0 100px $red;}
+    97%  {color: $red; text-shadow: 0 0 2px #000, 0 0 4px $red, 0 0 25px $red, 0 0 40px $red, 0 0 50px $red;}
+    98%  {color: #000; text-shadow: 0 0 10px #000, 0 0 20px #000;}
+  }
