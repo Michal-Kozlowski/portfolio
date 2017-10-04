@@ -322,6 +322,9 @@ h2 {
   .et {
     top: 115px; } }
 @media only screen and (min-width: 992px) {
+  span:hover {
+    cursor: pointer; }
+
   .name {
     -webkit-animation: neon 1.5s ease-in-out infinite alternate;
     animation: neon 1.5s ease-in-out infinite alternate; }
