@@ -162,6 +162,10 @@ article {
 h2 {
   margin-bottom: 20px; }
 
+.page {
+  display: flex;
+  flex-wrap: wrap; }
+
 .work {
   background-image: url("images/3.jpg");
   color: white;
@@ -200,7 +204,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 10px 2px 5px; }
+    margin: 10px 1px 5px; }
   .used .html {
     background-image: url("images/html.png"); }
   .used .css {
@@ -211,7 +215,7 @@ h2 {
     background-image: url("images/jquery.png"); }
   .used .rwd {
     background-image: url("images/rwd_invert.png");
-    width: 40px; }
+    width: 32px; }
   .used .ps {
     background-image: url("images/photoshop.png"); }
   .used .sass {
@@ -219,6 +223,16 @@ h2 {
     width: 31px; }
   .used .bs {
     background-image: url("images/bootstrapicon.png"); }
+  .used .nodejs {
+    background-image: url("images/nodejs.png"); }
+  .used .heroku {
+    background-image: url("images/heroku.png"); }
+  .used .mongodb {
+    background-image: url("images/mongodb.png");
+    width: 56px; }
+  .used .npm {
+    background-image: url("images/npm.png");
+    width: 38px; }
 
 .contact {
   color: white;

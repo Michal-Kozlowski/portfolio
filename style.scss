@@ -217,6 +217,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .work {
   background-image: url("images/3.jpg");
   color: white;
@@ -267,7 +272,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 10px 2px 5px;
+    margin: 10px 1px 5px;
   }
 
   .html {
@@ -284,7 +289,7 @@ h2 {
   }
   .rwd {
     background-image: url("images/rwd_invert.png");
-    width: 40px;
+    width: 32px;
   }
   .ps {
     background-image: url("images/photoshop.png");
@@ -295,6 +300,20 @@ h2 {
   }
   .bs {
     background-image: url("images/bootstrapicon.png");
+  }
+  .nodejs {
+    background-image: url("images/nodejs.png");
+  }
+  .heroku {
+    background-image: url("images/heroku.png");
+  }
+  .mongodb {
+    background-image: url("images/mongodb.png");
+    width: 56px;
+  }
+  .npm {
+    background-image: url("images/npm.png");
+    width: 38px;
   }
 }
 
