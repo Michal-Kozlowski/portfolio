@@ -260,10 +260,8 @@ h2 {
   margin: auto;
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
-  &:hover {
-    -webkit-filter: drop-shadow(0 0 10px white);
-    filter: drop-shadow(0 0 10px white);
-  }
+  -webkit-filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px white);
 
   div {
     height: 24px;
@@ -488,6 +486,15 @@ h2 {
 
   .navbar-brand {
     font-size: 26px;
+  }
+  
+  .used {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    &:hover {
+      -webkit-filter: drop-shadow(0 0 10px white);
+      filter: drop-shadow(0 0 10px white);
+    }
   }
 
   .small_icon, .jquery {

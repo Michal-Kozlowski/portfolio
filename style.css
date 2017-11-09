@@ -193,10 +193,9 @@ h2 {
   display: inline-block;
   margin: auto;
   -webkit-filter: brightness(50%);
-  filter: brightness(50%); }
-  .used:hover {
-    -webkit-filter: drop-shadow(0 0 10px white);
-    filter: drop-shadow(0 0 10px white); }
+  filter: brightness(50%);
+  -webkit-filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px white); }
   .used div {
     height: 24px;
     width: 24px;
@@ -352,6 +351,13 @@ h2 {
 
   .navbar-brand {
     font-size: 26px; }
+
+  .used {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%); }
+    .used:hover {
+      -webkit-filter: drop-shadow(0 0 10px white);
+      filter: drop-shadow(0 0 10px white); }
 
   .small_icon, .jquery {
     margin: 80px 0 0; }
