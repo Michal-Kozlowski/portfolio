@@ -232,6 +232,8 @@ h2 {
   .used .npm {
     background-image: url("images/npm.png");
     width: 38px; }
+  .used .vue {
+    background-image: url("images/vue.png"); }
 
 .contact {
   color: white;
