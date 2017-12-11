@@ -118,6 +118,10 @@ h3 {
   font-family: "membraregular";
   text-align: center;
   text-shadow: 0 0 10px $blue, 0 0 20px $blue, 0 0 30px $blue, 0 0 40px $blue;
+  -webkit-user-select: none;       
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 //------------------------------about me
