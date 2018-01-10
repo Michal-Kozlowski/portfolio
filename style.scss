@@ -7,7 +7,7 @@ $black: #333333;
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  // padding: 0;
 }
 
 html {
@@ -149,11 +149,11 @@ h3 {
 //------------------------------skills
 .skills {
   list-style-type: none;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .skill {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 
   p {
     text-align: center;
@@ -163,11 +163,22 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+}
+
 .big_icon {
   object-fit: cover;
   height: 100px;
-  display: block;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .col-md-4 {
@@ -188,26 +199,6 @@ h3 {
   max-width: 300px;
   display: block;
   margin: 10px auto;
-}
-
-.icons {
-  img {
-    object-fit: cover;
-    height: 60px;
-    display: block;
-    margin: auto;
-  }
-
-  p {
-    text-align: center;
-    max-width: 540px;
-    padding-top: 15px;
-    margin: auto;
-  }
-
-  .col-sm-4, .col-sm-2 {
-    margin-bottom: 70px;
-  }
 }
 
 article {
@@ -488,6 +479,13 @@ h2 {
 
     .broke {
       color: black;
+    }
+  }
+
+  .skills {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
