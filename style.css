@@ -31,11 +31,9 @@ li a {
 .navbar-header {
   font-family: "membraregular";
   color: #0000FF;
-  background-color: #333333;
   background-color: rgba(0, 0, 0, 0.8); }
 
 .navbar-collapse {
-  background-color: #333333;
   background-color: rgba(0, 0, 0, 0.65); }
 
 .navbar-toggle {
@@ -235,6 +233,9 @@ h2 {
     width: 38px; }
   .used .vue {
     background-image: url("images/vue.png"); }
+  .used .materialize {
+    background-image: url("images/materialize.png");
+    width: 38px; }
 
 .contact {
   color: white;
